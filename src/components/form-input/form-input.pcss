@@ -1,0 +1,22 @@
+.field {
+    display: flex;
+    flex-direction: column;
+
+    .label {
+        color: var(--color-text-Secondary);
+        font-size: 9px;
+    }
+
+    .input {
+        outline: none;
+        border: none;
+        background-color: var(--color-bg-Primary);
+        border-bottom: 2px solid var(--color-button-Primary);
+        padding: 7px 0;
+    }
+
+    .label:has(+ .input:placeholder-shown) {
+        display: none;
+    }
+
+}

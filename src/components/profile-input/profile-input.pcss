@@ -1,0 +1,24 @@
+.profile-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .label {
+        color: var(--color-text-Primary);
+        font-size: 13px;
+    }
+
+    .input {
+        outline: none;
+        border: none;
+        text-align: right;
+        background-color: var(--color-bg-Primary);
+        padding: 7px 0;
+        color: var(--color-text-Secondary);
+        font-size: 13px;
+    }
+}
+
+.profile-field:not(:last-child) {
+    border-bottom: 1px solid var(--color-text-Secondary);
+}
